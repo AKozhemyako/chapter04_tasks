@@ -1,3 +1,3 @@
 #применение в цикле for функцию range для вывода чисел на экран из диапазона
-for i in range(10):
-    print(i)
+for x in range(3):
+     print ('Hello World!')
