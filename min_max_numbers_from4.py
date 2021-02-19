@@ -25,4 +25,3 @@ maximal1 = maximum(a, b)
 maximal2 = maximum(c, d)
 maximal = maximum(maximal1, maximal2)
 print( maximal, 'это самое большое из всех введенных чисел')
-
