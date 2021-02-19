@@ -16,12 +16,9 @@ def maximum(x, y):
         return x
     else:
         return y
-minimal1 = minimum(a, b)
-minimal2 = minimum(c, d)
-minimal = minimum(minimal1, minimal2)
+
+minimal = minimum(minimum(a, b), minimum(c, d))
 print( minimal, 'это самое маленькое из всех введенных чисел')
 
-maximal1 = maximum(a, b)
-maximal2 = maximum(c, d)
-maximal = maximum(maximal1, maximal2)
+maximal = maximum(maximum(a, b), maximum(c, d))
 print( maximal, 'это самое большое из всех введенных чисел')
