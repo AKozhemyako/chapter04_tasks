@@ -18,7 +18,30 @@ def maximum(x, y):
         return y
 
 minimal = minimum(minimum(a, b), minimum(c, d))
-print( minimal, 'это самое маленькое из всех введенных чисел')
 
 maximal = maximum(maximum(a, b), maximum(c, d))
+
+count_max = 0
+if maximal == a:
+    count_max+=1
+if maximal == b:
+    count_max+=1
+if maximal == c:
+    count_max+=1
+if maximal == d:
+    count_max+=1
+
+count_min = 0
+if minimal == a:
+    count_min+=1
+if minimal == b:
+    count_min+=1
+if minimal == c:
+    count_min+=1
+if minimal == d:
+    count_min+=1
+
+print( minimal, 'это самое маленькое из всех введенных чисел')
 print( maximal, 'это самое большое из всех введенных чисел')
+print(count_max, 'повторяющихся больших чисел')
+print(count_min, 'повторяющихся малых чисел')
