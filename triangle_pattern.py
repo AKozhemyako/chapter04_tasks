@@ -1,6 +1,9 @@
 # программа выводит треугольную комбинацию
-BASE_SIZE = 1
+BASE_SIZE = 10
 for r in range(BASE_SIZE):
-    for c in range(r + 8):
-        print('*', end='')
-    print('#')
+    for c in range(r):
+        if r == 7 or c == 2 or c == 7 or r ==0:
+            print(' ', end='')
+        else:
+            print('#', end='')
+    print()
